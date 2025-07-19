@@ -13,7 +13,7 @@ function LandingPage() {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
               <Code className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-white">AI Chat IDE</span>
+            <span className="text-xl font-bold text-white">Liberation</span>
           </div>
           
           <div className="flex items-center space-x-4">
@@ -27,7 +27,7 @@ function LandingPage() {
               to="/register" 
               className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
             >
-              Get Started
+              Live
             </Link>
           </div>
         </div>
@@ -42,9 +42,9 @@ function LandingPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              AI Chat Platform
+             The Liberal Web Project
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-                With IDE Powers
+                Dismantling Oppression
               </span>
             </h1>
             
