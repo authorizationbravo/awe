@@ -49,8 +49,7 @@ function LandingPage() {
             </h1>
             
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              The ultimate AI-powered development environment. Chat with multiple LLMs, 
-              execute code, create visualizations, and build amazing projects—all in one platform.
+              A liberal minded project
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -58,7 +57,7 @@ function LandingPage() {
                 to="/register" 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-all transform hover:scale-105"
               >
-                Start Building Free
+                Start Building
                 <ArrowRight className="w-5 h-5" />
               </Link>
               
@@ -75,7 +74,7 @@ function LandingPage() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Everything You Need</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">Free Your Mind</h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               A complete development environment powered by AI, designed for modern developers and data scientists.
             </p>
@@ -111,7 +110,7 @@ function LandingPage() {
             className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-gray-800 rounded-2xl p-12"
           >
             <h2 className="text-4xl font-bold text-white mb-4">
-              Ready to Supercharge Your Development?
+              Ready Yet?
             </h2>
             <p className="text-gray-300 text-lg mb-8">
               Join thousands of developers who are building faster with AI-powered tools.
