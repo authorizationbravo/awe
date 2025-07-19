@@ -1,0 +1,132 @@
+{
+  "examples": {
+    "datasets": {
+      "sales": {
+        "name": "Monthly Sales Data",
+        "description": "Sales data for the past 12 months",
+        "data": [
+          { "month": "Jan", "sales": 45000, "profit": 12000, "customers": 150 },
+          { "month": "Feb", "sales": 52000, "profit": 15000, "customers": 180 },
+          { "month": "Mar", "sales": 48000, "profit": 13500, "customers": 165 },
+          { "month": "Apr", "sales": 61000, "profit": 18500, "customers": 220 },
+          { "month": "May", "sales": 55000, "profit": 16200, "customers": 195 },
+          { "month": "Jun", "sales": 70000, "profit": 22000, "customers": 250 },
+          { "month": "Jul", "sales": 68000, "profit": 21000, "customers": 245 },
+          { "month": "Aug", "sales": 72000, "profit": 23500, "customers": 260 },
+          { "month": "Sep", "sales": 65000, "profit": 19500, "customers": 235 },
+          { "month": "Oct", "sales": 58000, "profit": 17000, "customers": 210 },
+          { "month": "Nov", "sales": 75000, "profit": 25000, "customers": 280 },
+          { "month": "Dec", "sales": 82000, "profit": 28000, "customers": 320 }
+        ]
+      },
+      "products": {
+        "name": "Product Performance",
+        "description": "Performance metrics for different product categories",
+        "data": [
+          { "category": "Electronics", "revenue": 250000, "units_sold": 1200, "avg_rating": 4.2 },
+          { "category": "Clothing", "revenue": 180000, "units_sold": 2500, "avg_rating": 4.0 },
+          { "category": "Books", "revenue": 95000, "units_sold": 1800, "avg_rating": 4.5 },
+          { "category": "Home & Garden", "revenue": 320000, "units_sold": 950, "avg_rating": 4.1 },
+          { "category": "Sports", "revenue": 150000, "units_sold": 800, "avg_rating": 4.3 },
+          { "category": "Beauty", "revenue": 120000, "units_sold": 1500, "avg_rating": 4.4 }
+        ]
+      },
+      "users": {
+        "name": "User Demographics",
+        "description": "User demographics and engagement data",
+        "data": [
+          { "age_group": "18-24", "count": 1250, "engagement": 85, "retention": 0.72 },
+          { "age_group": "25-34", "count": 2100, "engagement": 92, "retention": 0.78 },
+          { "age_group": "35-44", "count": 1800, "engagement": 88, "retention": 0.81 },
+          { "age_group": "45-54", "count": 950, "engagement": 75, "retention": 0.85 },
+          { "age_group": "55-64", "count": 600, "engagement": 68, "retention": 0.88 },
+          { "age_group": "65+", "count": 300, "engagement": 62, "retention": 0.90 }
+        ]
+      }
+    },
+    "tutorials": {
+      "getting_started": {
+        "title": "Getting Started with AI Chat IDE",
+        "steps": [
+          "Welcome to AI Chat IDE! This platform combines the power of AI assistance with a full development environment.",
+          "Start by creating a new conversation or selecting an existing one from the sidebar.",
+          "Use the chat interface to ask questions, request code examples, or get help with debugging.",
+          "The code editor supports multiple languages including Python, JavaScript, and TypeScript.",
+          "Execute your code directly in the browser and see results in the output panel.",
+          "Create interactive visualizations using the built-in Plotly integration.",
+          "Embed web content using secure iframes for research and documentation."
+        ]
+      },
+      "code_execution": {
+        "title": "Code Execution Tutorial",
+        "examples": {
+          "python": {
+            "title": "Python Data Analysis",
+            "code": "import json\nimport statistics\n\n# Load sample sales data\nsales_data = [45000, 52000, 48000, 61000, 55000, 70000, 68000, 72000, 65000, 58000, 75000, 82000]\n\n# Calculate statistics\navg_sales = statistics.mean(sales_data)\nmedian_sales = statistics.median(sales_data)\nmax_sales = max(sales_data)\nmin_sales = min(sales_data)\n\nprint(f'Average Sales: ${avg_sales:,.2f}')\nprint(f'Median Sales: ${median_sales:,.2f}')\nprint(f'Highest Month: ${max_sales:,.2f}')\nprint(f'Lowest Month: ${min_sales:,.2f}')",
+            "description": "This example demonstrates basic data analysis with Python's statistics module."
+          },
+          "javascript": {
+            "title": "API Data Fetching",
+            "code": "// Fetch and process data from a public API\nasync function fetchUserData() {\n  try {\n    const response = await fetch('https://jsonplaceholder.typicode.com/users/1');\n    const user = await response.json();\n    \n    console.log('User Information:');\n    console.log(`Name: ${user.name}`);\n    console.log(`Email: ${user.email}`);\n    console.log(`Company: ${user.company.name}`);\n    console.log(`Website: ${user.website}`);\n    \n    return user;\n  } catch (error) {\n    console.error('Error fetching user data:', error);\n  }\n}\n\nfetchUserData();",
+            "description": "This example shows how to fetch and process data from an external API."
+          }
+        }
+      },
+      "visualization": {
+        "title": "Data Visualization Guide",
+        "chart_types": {
+          "line_chart": {
+            "title": "Line Charts",
+            "description": "Perfect for showing trends over time",
+            "use_cases": ["Time series data", "Performance tracking", "Growth trends"]
+          },
+          "bar_chart": {
+            "title": "Bar Charts",
+            "description": "Great for comparing categories",
+            "use_cases": ["Category comparisons", "Rankings", "Survey results"]
+          },
+          "pie_chart": {
+            "title": "Pie Charts",
+            "description": "Ideal for showing proportions",
+            "use_cases": ["Market share", "Budget allocation", "Demographics"]
+          },
+          "scatter_plot": {
+            "title": "Scatter Plots",
+            "description": "Best for showing correlations",
+            "use_cases": ["Correlation analysis", "Outlier detection", "Regression analysis"]
+          }
+        }
+      }
+    },
+    "prompts": {
+      "code_generation": [
+        "Write a Python function to analyze CSV data and create basic statistics",
+        "Create a JavaScript function that fetches data from an API and handles errors",
+        "Generate a TypeScript class for managing user authentication",
+        "Write Python code to create a machine learning model for classification",
+        "Create a React component for displaying a data table with sorting"
+      ],
+      "data_analysis": [
+        "Analyze the sales data and identify trends and patterns",
+        "Calculate correlation between different metrics in the dataset",
+        "Perform statistical analysis on user engagement data",
+        "Create a summary report of product performance metrics",
+        "Identify outliers and anomalies in the time series data"
+      ],
+      "visualization": [
+        "Create a line chart showing sales trends over the past year",
+        "Generate a bar chart comparing product categories by revenue",
+        "Make a pie chart displaying user demographics by age group",
+        "Create a scatter plot to show correlation between engagement and retention",
+        "Build an interactive dashboard with multiple chart types"
+      ],
+      "debugging": [
+        "Help me debug this Python code that's throwing a TypeError",
+        "Fix the JavaScript function that's not returning the expected result",
+        "Optimize this SQL query for better performance",
+        "Resolve the CSS layout issue in my responsive design",
+        "Debug the React component that's not updating state correctly"
+      ]
+    }
+  }
+}
