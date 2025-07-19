@@ -1,14 +1,17 @@
+/* Import Tailwind CSS */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Custom fonts */
+/* Custom Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
 
-/* Base styles */
+/* Base Styles */
 * {
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #1f2937;
 }
 
 html {
@@ -25,7 +28,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Scrollbar styles */
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -50,13 +53,7 @@ body {
   background: #1f2937;
 }
 
-/* Firefox scrollbar */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #4b5563 #1f2937;
-}
-
-/* Monaco Editor theme adjustments */
+/* Monaco Editor Theme Adjustments */
 .monaco-editor {
   background-color: #111827 !important;
 }
@@ -69,7 +66,7 @@ body {
   background-color: #111827 !important;
 }
 
-/* Resizable panels */
+/* Resizable Panels */
 .react-resizable-handle {
   background-color: #374151;
   transition: background-color 0.2s ease;
@@ -89,7 +86,7 @@ body {
   cursor: row-resize;
 }
 
-/* Plotly.js theme adjustments */
+/* Plotly.js Theme Adjustments */
 .js-plotly-plot {
   background: transparent !important;
 }
@@ -114,7 +111,7 @@ body {
   color: #ffffff !important;
 }
 
-/* Custom animations */
+/* Custom Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -156,20 +153,14 @@ body {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Syntax highlighting enhancements */
-.language-python .token.string {
-  color: #10b981 !important;
-}
-
-.language-javascript .token.string {
-  color: #10b981 !important;
-}
-
+/* Syntax Highlighting Enhancements */
+.language-python .token.string,
+.language-javascript .token.string,
 .language-typescript .token.string {
   color: #10b981 !important;
 }
 
-/* Chat message animations */
+/* Chat Message Animations */
 .message-enter {
   opacity: 0;
   transform: translateY(20px);
@@ -190,7 +181,7 @@ body {
   transition: opacity 300ms;
 }
 
-/* Loading states */
+/* Loading States */
 .loading-dots {
   display: inline-block;
 }
@@ -215,7 +206,7 @@ body {
   }
 }
 
-/* Toast notifications */
+/* Toast Notifications */
 .react-hot-toast {
   background: #1f2937 !important;
   color: #f3f4f6 !important;
@@ -225,13 +216,13 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Focus styles */
+/* Focus Styles */
 .focus-visible:focus {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
 
-/* Selection styles */
+/* Selection Styles */
 ::selection {
   background-color: rgba(59, 130, 246, 0.3);
   color: inherit;
@@ -242,7 +233,7 @@ body {
   color: inherit;
 }
 
-/* Gradient backgrounds */
+/* Gradient Backgrounds */
 .gradient-bg {
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
 }
@@ -258,7 +249,7 @@ body {
   border-radius: 7px;
 }
 
-/* Accessibility improvements */
+/* Accessibility Improvements */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -270,36 +261,29 @@ body {
   }
 }
 
-/* High contrast mode support */
 @media (prefers-contrast: high) {
-  .bg-gray-800 {
-    background-color: #000000 !important;
-  }
-  
+  .bg-gray-800,
   .bg-gray-900 {
     background-color: #000000 !important;
   }
-  
-  .text-gray-300 {
-    color: #ffffff !important;
-  }
-  
+
+  .text-gray-300,
   .text-gray-400 {
     color: #ffffff !important;
   }
 }
 
-/* Print styles */
+/* Print Styles */
 @media print {
   .no-print {
     display: none !important;
   }
-  
+
   body {
     background: white !important;
     color: black !important;
   }
-  
+
   .bg-gray-800,
   .bg-gray-900 {
     background: white !important;
@@ -307,7 +291,7 @@ body {
   }
 }
 
-/* Custom utility classes */
+/* Custom Utility Classes */
 .text-shadow {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -324,7 +308,7 @@ body {
   border: 1px solid rgba(75, 85, 99, 0.3);
 }
 
-/* Code block improvements */
+/* Code Block Improvements */
 pre {
   overflow-x: auto;
   white-space: pre-wrap;
@@ -336,7 +320,7 @@ code {
   font-variant-ligatures: normal;
 }
 
-/* Markdown content styling */
+/* Markdown Content Styling */
 .markdown-content h1,
 .markdown-content h2,
 .markdown-content h3,
@@ -408,26 +392,26 @@ code {
   margin: 2em 0;
 }
 
-/* Mobile responsiveness */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .hide-mobile {
     display: none;
   }
-  
+
   .mobile-full {
     width: 100% !important;
   }
-  
+
   .mobile-p-2 {
     padding: 0.5rem !important;
   }
-  
+
   .mobile-text-sm {
     font-size: 0.875rem !important;
   }
 }
 
-/* Dark mode utilities */
+/* Dark Mode Utilities */
 .dark {
   color-scheme: dark;
 }
